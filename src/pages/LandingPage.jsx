@@ -2,6 +2,7 @@
 import Auctions from '../components/Auctions';
 import BeforeSPAndAcce from '../components/BeforeSPAndAcce';
 import Classifieds from '../components/Classifieds';
+import ComponentUnderNewlyArrives from '../components/ComponentUnderNewlyArrives';
 import Divider from '../components/Divider';
 import HeroSection from '../components/HeroSection';
 import NewlyArrived from '../components/NewlyArrived';
@@ -17,6 +18,7 @@ const LandingPage = () => {
             <PopularCategories/>
             <Divider/>
             <NewlyArrived/>
+            <ComponentUnderNewlyArrives/>
             <ShopByCategory />
             <BeforeSPAndAcce />
             <Auctions/>
