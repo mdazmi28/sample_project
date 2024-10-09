@@ -1,4 +1,11 @@
 // import React from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+
+import "./Style/Swiper/popularCategories.css";
 const data = [
     { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
     { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
@@ -25,15 +32,20 @@ const PopularCategories = () => {
                 </div>
             </div>
             <div className="w-2/3">
-                <div className="flex items-center justify-start hide-scrollbar overflow-x-auto gap-4">
-                    {
-                        data.map((item, index) => (
-                            <div className="" key={index}>
+                <div className="flex justify-start hide-scrollbar overflow-x-auto gap-4">
+                <Swiper className="mySwiper" spaceBetween={30} slidesPerView={6}> 
+                {
+                    data.map((item, index) => (
+                        <SwiperSlide key={index}> {/* Each item should be in its own SwiperSlide */}
+                            <div className="">
                                 <div className="w-[120px] h-[120px] bg-gray-300"></div>
                                 <h1>{item.name}</h1>
                             </div>
-                        ))
-                    }
+                        </SwiperSlide>
+                    ))
+                }
+            </Swiper>
+                    
                 </div>
 
             </div>
