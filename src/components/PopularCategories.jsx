@@ -19,7 +19,7 @@ const PopularCategories = () => {
                 <div className='flex flex-col justify-center items-start pl-10 pt-[40px] gap-4'>
                     <h1 className="text-[20px] font-bold font-lato">Popular Categories</h1>
                     <p className="text-[17px] text-gray-400">What our customers find interesting</p>
-                    <div className="w-[188px] h-[40px] bg-yellow-300 rounded-lg flex justify-center items-center">
+                    <div className="w-[188px] h-[40px] bg-yellow-300 rounded-lg flex justify-center items-center cursor-pointer">
                         <p className="text-[13px] font-lato font-bold">All Popular Categories</p>
                     </div>
                 </div>

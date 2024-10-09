@@ -37,7 +37,7 @@ const SaleCampAndDetaisDay = () => {
             <div className=" flex flex-col w-1/2 bg-[#ffd8cbe7] px-3 pt-3 gap-4">
                 <div className="flex justify-between">
                     <h1 className="font-bold text-[20px] text-black">Sale Campaigns</h1>
-                    <h1 className="text-blue-400">All Campaigns</h1>
+                    <h1 className="text-black hover:text-blue-400 hover:underline">All Campaigns</h1>
                 </div>
                 <div className="flex gap-4 justify-center items-center">
                     {
@@ -60,7 +60,7 @@ const SaleCampAndDetaisDay = () => {
                             <div className="flex gap-4">
                                 <div className="w-[192px] h-[220px] bg-gray-300"></div>
                                 <div className="w-[200px] h-[220px] pl-4 flex flex-col gap-3">
-                                    <div className="w-[114px] h-[40px] rounded-[22px] bg-yellow-300 flex justify-center items-center font-bold">Top Deals</div>
+                                    <div className="w-[114px] h-[40px] rounded-[22px] bg-yellow-300 flex justify-center items-center font-bold cursor-pointer">Top Deals</div>
                                     <div className="font-bold text-[17px]">Smartphones</div>
                                     <div className="font-[13px]">Samsung, Oneplus, Nokia, Motorola & more</div>
                                     <div className="mt-6 font-bold text-[13px] font-lato">Under $200.00</div>
@@ -72,7 +72,7 @@ const SaleCampAndDetaisDay = () => {
                 </div>
                 <div className="w-1/2 px-3 pt-3 gap-4 flex flex-col">
                     <div className='flex flex-col justify-end items-end'>
-                        <h1>View All Details</h1>
+                        <h1 className='hover:text-blue-400 hover:underline'>View All Details</h1>
                         <div className='w-[300px] h-[220px] hide-scrollbar overflow-y-auto flex flex-col gap-3 pl-3'>
                            {
                                 viewAllDetailsData.map((item,index)=>(
