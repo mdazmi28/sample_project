@@ -2,6 +2,7 @@
 import Auctions from '../components/Auctions';
 import BeforeSPAndAcce from '../components/BeforeSPAndAcce';
 import Classifieds from '../components/Classifieds';
+import Divider from '../components/Divider';
 import HeroSection from '../components/HeroSection';
 import PopularCategories from '../components/PopularCategories';
 import SaleCampAndDetaisDay from '../components/SaleCampAndDetaisDay';
@@ -13,6 +14,7 @@ const LandingPage = () => {
             <HeroSection/>
             <SaleCampAndDetaisDay/>
             <PopularCategories/>
+            <Divider/>
             <ShopByCategory />
             <BeforeSPAndAcce />
             <Auctions/>

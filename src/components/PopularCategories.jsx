@@ -1,4 +1,16 @@
 // import React from 'react';
+const data = [
+    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
+    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
+    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
+    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
+    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
+    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
+    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
+    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
+    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
+    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
+];
 
 const PopularCategories = () => {
     return (
@@ -12,7 +24,19 @@ const PopularCategories = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-2/3 bg-red-400"></div>
+            <div className="w-2/3">
+                <div className="flex items-center justify-start hide-scrollbar overflow-x-auto gap-4">
+                    {
+                        data.map((item, index) => (
+                            <div className="" key={index}>
+                                <div className="w-[120px] h-[120px] bg-gray-300"></div>
+                                <h1>{item.name}</h1>
+                            </div>
+                        ))
+                    }
+                </div>
+
+            </div>
 
         </div>
     );
