@@ -5,6 +5,7 @@ import Classifieds from '../components/Classifieds';
 import ComponentUnderNewlyArrives from '../components/ComponentUnderNewlyArrives';
 import ComponentUnderNewlyArrives2 from '../components/ComponentUnderNewlyArrives2';
 import Divider from '../components/Divider';
+import EarlyBirdOffers from '../components/EarlyBirdOffers';
 import HeroSection from '../components/HeroSection';
 import NewlyArrived from '../components/NewlyArrived';
 import PopularCategories from '../components/PopularCategories';
@@ -21,6 +22,7 @@ const LandingPage = () => {
             <NewlyArrived/>
             <ComponentUnderNewlyArrives/>
             <ComponentUnderNewlyArrives2/>
+            <EarlyBirdOffers/>
             <ShopByCategory />
             <BeforeSPAndAcce />
             <Auctions/>

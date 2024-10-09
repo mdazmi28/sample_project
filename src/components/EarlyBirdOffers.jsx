@@ -13,17 +13,17 @@ const data = [
 ];
 
 
-const NewlyArrived = () => {
+const EarlyBirdOffers = () => {
     return (
         <div className="h-[400px] w-auto px-10 flex flex-col">
             <div className="flex justify-between mt-6">
                 <div>
-                    <div className="font-bold text-[20px]">Newly Arrived</div>
-                    <div className="text-gray-400">Products arrived in last 30 days</div>
+                    <div className="font-bold text-[20px]">Early Bird Offers</div>
+                    {/* <div className="text-gray-400">Products arrived in last 30 days</div> */}
                 </div>
-                <div className="h-[40px] w-[170px] bg-yellow-400 flex justify-center items-center rounded-xl cursor-pointer">
-                    <div className="text-[12px] font-bold text-black">
-                    View All New Products
+                <div className="h-[40px] w-[170px] flex justify-end items-center rounded-xl cursor-pointer">
+                    <div className="text-[12px] font-bold text-blue-500">
+                    All Products
                     </div>
                 </div>
             </div>
@@ -42,4 +42,4 @@ const NewlyArrived = () => {
     );
 };
 
-export default NewlyArrived;
+export default EarlyBirdOffers;
