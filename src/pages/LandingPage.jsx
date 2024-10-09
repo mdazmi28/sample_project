@@ -6,11 +6,13 @@ import ComponentUnderNewlyArrives from '../components/ComponentUnderNewlyArrives
 import ComponentUnderNewlyArrives2 from '../components/ComponentUnderNewlyArrives2';
 import Divider from '../components/Divider';
 import EarlyBirdOffers from '../components/EarlyBirdOffers';
+import GetAnApple from '../components/GetAnApple';
 import HeroSection from '../components/HeroSection';
 import NewlyArrived from '../components/NewlyArrived';
 import PopularCategories from '../components/PopularCategories';
 import SaleCampAndDetaisDay from '../components/SaleCampAndDetaisDay';
 import ShopByCategory from '../components/ShopByCategory';
+import Timer from '../components/Timer';
 
 const LandingPage = () => {
     return (
@@ -23,10 +25,12 @@ const LandingPage = () => {
             <ComponentUnderNewlyArrives/>
             <ComponentUnderNewlyArrives2/>
             <EarlyBirdOffers/>
+            <GetAnApple/>
             <ShopByCategory />
             <BeforeSPAndAcce />
             <Auctions/>
             <Classifieds/>
+            <Timer/>
            
             
         </div>
