@@ -6,10 +6,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import './Style/swiperStyle.css';
+import './Style/Swiper/swiperStyle.css';
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay  } from 'swiper/modules';
 const HeroSection = () => {
     return (
         <div className=" flex h-[344px] w-full rounded bg-[#f8de78]">
@@ -28,7 +28,14 @@ const HeroSection = () => {
             <div className="w-1/2 flex justify-center items-center">
                 <div className="w-[600px] h-[320px] bg-white">
                     {/* Initialize Swiper */}
-                    <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+                    <Swiper  pagination={{ clickable: true }} // Enable pagination
+                        modules={[Pagination, Autoplay]} // Include the Pagination and Autoplay modules
+                        autoplay={{
+                            delay: 2000, // Delay in milliseconds
+                            disableOnInteraction: false, // Continue autoplay after user interactions
+                        }}
+                        loop={true} // Enable loop for continuous sliding
+                        className="mySwiper">
                         <SwiperSlide>Slide 1</SwiperSlide>
                         <SwiperSlide>Slide 2</SwiperSlide>
                         <SwiperSlide>Slide 3</SwiperSlide>

@@ -8,7 +8,7 @@
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import './Style/swipeStyleVertical.css';
+import './Style/Swiper/swipeStyleVertical.css';
 
 // import required modules
 // import { Mousewheel, Pagination } from 'swiper/modules';
