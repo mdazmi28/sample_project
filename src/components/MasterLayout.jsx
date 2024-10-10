@@ -4,14 +4,13 @@ import Menu from "./Menu";
 
 const MasterLayout = (props) => {
     return (
-        <div className="h-screen flex">
+        <div className="h-screen flex gap-0">
             {/* Left */}
-            <div className="w-[8%] p-4">
-                
+            <div className="pl-4">
                 <Menu />
             </div>
             {/* Right */}
-            <div className="w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] bg-[#F7F8FA] overflow-y-scroll flex flex-col hide-scrollbar">
+            <div className="bg-[#F7F8FA] overflow-y-scroll flex flex-col hide-scrollbar -mx-[10px]">
                 {/* <NavBar/> */}
                 {props.children}
             </div>

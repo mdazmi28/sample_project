@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const menuItems = [
     {
         title: "MENU",
@@ -18,7 +20,6 @@ const menuItems = [
                 icon: "/images/student.png",
                 label: "Students",
                 href: "/list/students",
-                //   visible: ["admin", "teacher"],
             },
             {
                 icon: "/images/parent.png",
@@ -114,31 +115,55 @@ const menuItems = [
 ];
 
 const Menu = () => {
-    return (
-        <div className='mt-4 text-sm'>
-            <div href="/" className='flex'>
-                <img src="../../public/images/mainmenu.JPG" alt="Logo" width={32} height={32} />
-                <span className="hidden lg:block font-bold"></span>
-            </div>
-            {
-                menuItems.map((item, index) => (
-                    <div key={index} className='flex flex-col gap-2 mt-10'>
-                        {/* <span className='hidden md:block text-gray-400 font-light my-4'>{item.title}</span> */}
-                        {
-                            item.items.map((menuItem, index) => (
-                                <div key={index} href={menuItem.href} className='flex items-center justify-center lg:justify-start gap-4 text-black py-0 md:px-2 rounded-md hover:bg-lamaSkyLight'>
-                                    <img src={menuItem.icon} width={20} height={20} />
-                                    <span className='hidden'>{menuItem.label}</span>
-                                </div>
-                            ))
-                        }
+    const [isMenuVisible, setIsMenuVisible] = useState(false);
 
+    const toggleMenu = () => {
+        setIsMenuVisible(!isMenuVisible);
+    };
+
+    return (
+        <div className="mt-4 text-sm w-[270px] border">
+            {
+                isMenuVisible ? (
+                    <div className="flex items-center w-[247px] h-[329x] bg-yellow-300 rounded-3xl px-2 py-1 cursor-pointer">
+                        <div className="flex items-center" onClick={toggleMenu}>
+                            <img src="/images/mainmenu.png" alt="Logo" width={32} height={32} />
+                            <span className="">All Categories</span>
+                        </div>
                     </div>
-                ))
+                ) : (
+                    <div className="flex cursor-pointer" onClick={toggleMenu}>
+                        <img src="/images/mainmenu.png" alt="Logo" width={32} height={32} />
+                        {/* <span className="">All Categories</span> */}
+                    </div>
+                )
             }
+
+            <div className="pt-4 border">
+                {menuItems.map((item, index) => (
+                    <div key={index} className="flex flex-col gap-2">
+                        {item.items.map((menuItem, index) => (
+                            <div
+                                key={index}
+                                href={menuItem.href}
+                                className="flex items-center justify-start gap-4 text-black py-2 md:px-2 rounded-md hover:bg-lamaSkyLight transition-all"
+                            >
+                                <img src={menuItem.icon} width={20} height={20} />
+                                <span
+                                    className={`transition-all duration-300 ease-in-out ${isMenuVisible
+                                        ? "inline-block w-auto opacity-100"
+                                        : "w-0 opacity-0 overflow-hidden"
+                                        }`}
+                                >
+                                    {menuItem.label}
+                                </span>
+                            </div>
+                        ))}
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };
-
 
 export default Menu;
