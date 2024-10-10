@@ -137,7 +137,7 @@ const Menu = () => {
     }
 
     return (
-        <div className="mt-4 text-sm w-[270px] border">
+        <div className="mt-4 text-sm w-[270px]">
             {
                 isMenuVisible ? (
                     <div className="flex items-center w-[247px] h-[329x] bg-yellow-300 rounded-3xl px-2 py-1 cursor-pointer">
@@ -154,7 +154,7 @@ const Menu = () => {
                 )
             }
           
-            <div className="pt-4 border">
+            <div className="pt-4">
                 {menuItems.map((item, index) => (
                     <div key={index} className="flex flex-col gap-2">
                         {item.items.map((menuItem, index) => (

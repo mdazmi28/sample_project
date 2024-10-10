@@ -54,7 +54,7 @@ const NavBar = () => {
 
                         {/* Contact */}
                         <div>
-                            <div className="flex gap-4 ml-4">
+                            <div className="flex gap-4 ml-[60px]">
                                 <div className="">
                                     <h1 className="text-yellow-300 text-[13px] font-bold">+01 112 352 566</h1>
                                     <h1 className="text-gray-300 text-[12px]">Track Order</h1>
@@ -102,11 +102,11 @@ const NavBar = () => {
                     </div>
                     {/* Bottom */}
                     <div>
-                        <div className="container mx-auto  h-[30px]">
+                        <div className="container mx-auto h-[30px]">
                             <div className="grid grid-cols-3">
                                 {/* Left */}
                                 <div className="col-span-2">
-                                    <div className="flex justify-start items-start gap-[20px] pl-10">
+                                    <div className="flex gap-[20px] pl-10">
                                         <div className="text-white font-bold flex gap-2 items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                                                 <g id="CATEGORIES" transform="translate(-3 -3)">
