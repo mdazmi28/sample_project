@@ -34,7 +34,7 @@ const NavBar = () => {
                                     <div className="flex items-center">
                                         <div className="flex gap-4 justify-end w-full ">
                                             <h1 className="text-[13px] text-gray-500">All Products</h1>
-                                            <img  src="images/dropdown.png" className="h-[20px] w-[20px] mt-0" />
+                                            <img src="images/dropdown.png" className="h-[20px] w-[20px] mt-0" />
                                         </div>
                                     </div>
                                     <div className="col-span-3 h-10 flex items-center">
@@ -57,19 +57,45 @@ const NavBar = () => {
                                     <h1 className="text-gray-300 text-[12px]">Track Order</h1>
                                 </div>
                                 <div className="">
-                                    <div className="flex gap-1">
-                                        <h1 className="text-yellow-300 text-[13px] font-bold">EN/USD</h1>
-                                        <img src="images/dropdown.png" className="h-[20px] w-[20px] mt-0 text-white" />
+                                    <div className="flex gap-4 items-center">
+                                        <div>
+                                            <h1 className="text-yellow-300 text-[13px] font-bold">EN/USD</h1>
+                                        </div>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6.104" viewBox="0 0 10 6.104">
+                                                <path id="_29fccd8d91811ccf56a40c54ba6c4ab3" data-name="29fccd8d91811ccf56a40c54ba6c4ab3" d="M4.011,1039.215a.833.833,0,0,1,1.41-.625l4.422,4.156a.833.833,0,0,1,0,1.214l-4.422,4.156a.833.833,0,1,1-1.14-1.213l3.777-3.549L4.281,1039.8A.832.832,0,0,1,4.011,1039.215Z" transform="translate(1048.357 -4.002) rotate(90)" fill="#929292" fill-rule="evenodd" />
+                                            </svg>
+                                        </div>
 
                                     </div>
-
                                     <h1 className="text-gray-300 text-[12px]">Seller Center</h1>
                                 </div>
 
 
                             </div>
                         </div>
-                        <div>1</div>
+
+                        {/* Account */}
+                        <div>
+                            <div className="flex gap-4">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                        <rect id="Rectangle_18381" data-name="Rectangle 18381" width="32" height="32" rx="16" fill="#797979" />
+                                        <g id="Page-1" transform="translate(7.999 8.005)">
+                                            <g id="Dribbble-Light-Preview" transform="translate(0 -0.005)">
+                                                <g id="icons">
+                                                    <path id="profile-_1335_" data-name="profile-[#1335]" d="M372,2007a3.2,3.2,0,1,1,3.2-3.2,3.2,3.2,0,0,1-3.2,3.2m3.006.538a4.8,4.8,0,1,0-6.011,0A7.693,7.693,0,0,0,364,2015h1.6a6.4,6.4,0,0,1,12.8,0H380a7.694,7.694,0,0,0-4.992-7.46" transform="translate(-364 -1998.995)" fill="#ffcc01" fill-rule="evenodd" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div className="">
+                                    <h1 className="text-yellow-300 text-[13px] font-bold">Login or Register</h1>
+                                    <h1 className="text-gray-300 text-[12px]">Customer Zone</h1>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                     {/* Bottom */}
