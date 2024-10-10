@@ -1,6 +1,7 @@
 // import React from 'react';
 
 import Menu from "./Menu";
+import NavBar from "./NavBar";
 
 const MasterLayout = (props) => {
     return (
@@ -11,8 +12,11 @@ const MasterLayout = (props) => {
             </div>
             {/* Right */}
             <div className="bg-[#F7F8FA] overflow-y-scroll flex flex-col hide-scrollbar -mx-[10px]">
-                {/* <NavBar/> */}
-                {props.children}
+                <NavBar />
+                <div className="pr-[200px]">
+                    {props.children}
+                </div>
+
             </div>
 
         </div>

@@ -15,6 +15,7 @@ const menuItems = [
                 label: "Teachers",
                 href: "/list/teachers",
                 visible: ["admin", "teacher"],
+                submenus: ['a','b',1,2,3,4,5,6,7,8,9,0,7,7,4,3,33,2,]
             },
             {
                 icon: "/images/student.png",
@@ -116,10 +117,24 @@ const menuItems = [
 
 const Menu = () => {
     const [isMenuVisible, setIsMenuVisible] = useState(false);
+    const [onMouse, setOnMouse] = useState(false);
 
     const toggleMenu = () => {
         setIsMenuVisible(!isMenuVisible);
     };
+
+
+
+    const mouseEnter = () =>{
+        setOnMouse(!onMouse)
+        console.log("Enter")
+        console.log(onMouse)
+    }
+    const mouseLeace = () =>{
+        console.log("Leave")
+        console.log(onMouse)
+        // setOnMouse(!onMouse)
+    }
 
     return (
         <div className="mt-4 text-sm w-[270px] border">
@@ -138,7 +153,7 @@ const Menu = () => {
                     </div>
                 )
             }
-
+          
             <div className="pt-4 border">
                 {menuItems.map((item, index) => (
                     <div key={index} className="flex flex-col gap-2">
@@ -149,7 +164,7 @@ const Menu = () => {
                                 className="flex items-center justify-start gap-4 text-black py-2 md:px-2 rounded-md hover:bg-lamaSkyLight transition-all"
                             >
                                 <img src={menuItem.icon} width={20} height={20} />
-                                <span
+                                <span onMouseEnter={mouseEnter} onMouseLeave={mouseLeace}
                                     className={`transition-all duration-300 ease-in-out ${isMenuVisible
                                         ? "inline-block w-auto opacity-100"
                                         : "w-0 opacity-0 overflow-hidden"
