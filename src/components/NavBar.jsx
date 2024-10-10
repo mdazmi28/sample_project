@@ -4,6 +4,9 @@ const NavBar = () => {
     return (
         <div>
             <div className="h-[117px] bg-[#06072C] rounded">
+                <div className="container mx-auto">
+
+                </div>
                 <div className="flex flex-col gap-4">
                     {/* Top */}
                     <div className="grid grid-cols-5 pt-5">
@@ -96,9 +99,70 @@ const NavBar = () => {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     {/* Bottom */}
+                    <div>
+                        <div className="container mx-auto  h-[30px]">
+                            <div className="grid grid-cols-3">
+                                {/* Left */}
+                                <div className="col-span-2">
+                                    <div className="flex justify-start items-start gap-[20px] pl-10">
+                                        <div className="text-white font-bold flex gap-2 items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <g id="CATEGORIES" transform="translate(-3 -3)">
+                                                    <circle id="Ellipse_670" data-name="Ellipse 670" cx="3.556" cy="3.556" r="3.556" transform="translate(3 3)" fill="#ffcc01" />
+                                                    <circle id="Ellipse_671" data-name="Ellipse 671" cx="3.556" cy="3.556" r="3.556" transform="translate(3 11.889)" fill="#ffcc01" />
+                                                    <circle id="Ellipse_672" data-name="Ellipse 672" cx="3.556" cy="3.556" r="3.556" transform="translate(11.889 3)" fill="#ffcc01" />
+                                                    <circle id="Ellipse_673" data-name="Ellipse 673" cx="3.556" cy="3.556" r="3.556" transform="translate(11.889 11.889)" fill="#ffcc01" />
+                                                </g>
+                                            </svg>
+                                            <h1>All Categories</h1>
+                                        </div>
+                                        <div className="text-white">|</div>
+                                        <div className="text-yellow-300 font-bold tex-[13px]">Home</div>
+                                        <div className="text-yellow-300 font-bold tex-[13px]">Coupon</div>
+                                        <div className="text-yellow-300 font-bold tex-[13px]">All Shops</div>
+                                        <div className="text-yellow-300 font-bold tex-[13px]">Brands</div>
+                                        <div className="text-yellow-300 font-bold tex-[13px]">Summer Sale</div>
+                                        <div className="text-yellow-300 font-bold tex-[13px]">Computer Accessories</div>
+                                        <div className="text-yellow-300 font-bold tex-[13px]">More</div>
+
+                                    </div>
+
+                                </div>
+                                {/* Right */}
+                                <div className="pr-[90px]">
+                                    <div className="flex items-center justify-center gap-9">
+                                        <div>
+                                            <h1 className="text-gray-300 text-[13px]">Compare (17)</h1>
+                                        </div>
+                                        <div className="flex items-center gap-4">
+                                            <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="13.598" viewBox="0 0 16 13.598">
+                                                <g id="Layer_2" data-name="Layer 2" transform="translate(-1.999 -4)">
+                                                    <path id="heart" d="M10,17.6a.8.8,0,0,1-.568-.232L3.216,11.143A4.186,4.186,0,1,1,9.135,5.224L10,6.088l.864-.864a4.186,4.186,0,1,1,5.919,5.919l-6.215,6.223A.8.8,0,0,1,10,17.6Z" transform="translate(0)" fill="#ffcc01" />
+                                                </g>
+                                            </svg>
+                                            </div>
+                                            <div><h1 className="text-yellow-300 text-[13px]">Wishlist (17)</h1></div>
+                                        </div>
+                                        <div className="flex items-center gap-4">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14.4" viewBox="0 0 16 14.4">
+                                                    <path id="_75dcfce61b8c5e4b1f5cf9fe9a41e4c6" data-name="75dcfce61b8c5e4b1f5cf9fe9a41e4c6" d="M11.951,0A4.045,4.045,0,0,1,16,4.04h0v6.32a4.046,4.046,0,0,1-4.049,4.04h-7.9A4.045,4.045,0,0,1,0,10.36H0V4.04A4.04,4.04,0,0,1,4.048,0h7.9Zm.9,4.16a.608.608,0,0,0-.449.16h0L8.8,7.2a1.253,1.253,0,0,1-1.6,0h0L3.6,4.32a.612.612,0,0,0-.857.856h0l.1.1,3.64,2.84a2.519,2.519,0,0,0,3.127,0h0l3.609-2.888.064-.064a.619.619,0,0,0-.009-.8A.673.673,0,0,0,12.856,4.16Z" fill="#ffcc01" />
+                                                </svg>
+
+                                            </div>
+                                            <div><h1 className="text-yellow-300 text-[13px]">Notifications</h1></div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
 
                 </div>
 
