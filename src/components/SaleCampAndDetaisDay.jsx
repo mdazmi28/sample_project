@@ -75,9 +75,6 @@ const SaleCampAndDetaisDay = () => {
                             }
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
 

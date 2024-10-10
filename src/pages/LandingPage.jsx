@@ -13,7 +13,8 @@ import NewlyArrived from '../components/NewlyArrived';
 import PopularCategories from '../components/PopularCategories';
 import SaleCampAndDetaisDay from '../components/SaleCampAndDetaisDay';
 import ShopByCategory from '../components/ShopByCategory';
-import Timer from '../components/Timer';
+import SmartPhoneAndAcc from '../components/SmartPhoneAndAcc';
+// import Timer from '../components/Timer';
 
 const LandingPage = () => {
     return (
@@ -30,9 +31,10 @@ const LandingPage = () => {
                 <GetAnApple />
                 <ShopByCategory />
                 <BeforeSPAndAcce />
+                <SmartPhoneAndAcc/>
                 <Auctions />
                 <Classifieds />
-                <Timer />
+                {/* <Timer /> */}
             </div>
         </MasterLayout>
     );
