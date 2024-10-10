@@ -192,13 +192,13 @@ const Menu = () => {
                         </div>
                     ))}
                 </div>
-                
+
                 {/* Show submenus of hovered item */}
                 {
-                    hoveredMenuItem && (
-                        <div className="bg-white flex flex-col gap-4 px-[100px] border-l " onMouseLeave={handleMouseLeave}>
+                    isMenuVisible && hoveredMenuItem && (
+                        <div className="bg-white flex flex-col gap-4 px-[100px] border-l" onMouseLeave={handleMouseLeave}>
                             {hoveredMenuItem.submenus.map((submenu, idx) => (
-                                <div key={idx} className="text-black" >
+                                <div key={idx} className="text-black">
                                     {submenu}
                                 </div>
                             ))}
