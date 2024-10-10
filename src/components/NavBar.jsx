@@ -9,7 +9,7 @@ const NavBar = () => {
                     <div className="grid grid-cols-5 pt-5">
                         {/* Logo */}
                         <div className="">
-                            <div className="flex justify-center items-center h-full border border-red-700">
+                            <div className="flex justify-center items-center h-full">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="132" height="32" viewBox="0 0 132 32">
                                     <g id="Group_30177" data-name="Group 30177" transform="translate(-252 -22)">
                                         <text id="The" transform="translate(284 48)" fill="#afafaf" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">The</tspan></text>
@@ -31,13 +31,13 @@ const NavBar = () => {
                         <div className="col-span-2">
                             <div className="w-full h-10 bg-gray-300 rounded-full">
                                 <div className="grid grid-cols-4">
-                                    <div className="border border-red-400 flex items-center">
+                                    <div className="flex items-center">
                                         <div className="flex gap-4 justify-end w-full ">
                                             <h1 className="text-[13px] text-gray-500">All Products</h1>
                                             <img  src="images/dropdown.png" className="h-[20px] w-[20px] mt-0" />
                                         </div>
                                     </div>
-                                    <div className="col-span-3 border h-10 flex items-center">
+                                    <div className="col-span-3 h-10 flex items-center">
                                         <div className="flex justify-end w-full ">
                                             <img src="images/search.png" className="h-[20px] w-[20px] mr-5" />
                                         </div>
@@ -48,7 +48,27 @@ const NavBar = () => {
 
                             </div>
                         </div>
-                        <div>1</div>
+
+                        {/* Contact */}
+                        <div>
+                            <div className="flex gap-4 ml-4">
+                                <div className="">
+                                    <h1 className="text-yellow-300 text-[13px] font-bold">+01 112 352 566</h1>
+                                    <h1 className="text-gray-300 text-[12px]">Track Order</h1>
+                                </div>
+                                <div className="">
+                                    <div className="flex gap-1">
+                                        <h1 className="text-yellow-300 text-[13px] font-bold">EN/USD</h1>
+                                        <img src="images/dropdown.png" className="h-[20px] w-[20px] mt-0 text-white" />
+
+                                    </div>
+
+                                    <h1 className="text-gray-300 text-[12px]">Seller Center</h1>
+                                </div>
+
+
+                            </div>
+                        </div>
                         <div>1</div>
 
                     </div>
