@@ -103,32 +103,7 @@ const menuItems = [
             },
         ],
     },
-    {
-        title: "OTHER",
-        items: [
-            {
-                icon: "/images/profile.png",
-                label: "Profile",
-                href: "/profile",
-                visible: ["admin", "teacher", "student", "parent"],
-                submenus: ['a', 'b', 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 7, 7, 4, 3, 33, 2,]
-            },
-            {
-                icon: "/images/setting.png",
-                label: "Settings",
-                href: "/settings",
-                visible: ["admin", "teacher", "student", "parent"],
-                submenus: ['a', 'b', 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 7, 7, 4, 3, 33, 2,]
-            },
-            {
-                icon: "/images/logout.png",
-                label: "Logout",
-                href: "/logout",
-                visible: ["admin", "teacher", "student", "parent"],
-                submenus: ['a', 'b', 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 7, 7, 4, 3, 33, 2,]
-            },
-        ],
-    },
+    
 ];
 
 const Menu = () => {
@@ -153,7 +128,7 @@ const Menu = () => {
         <div className="mt-4 text-sm w-[270px]">
             {
                 isMenuVisible ? (
-                    <div className="flex items-center w-[247px] h-[329x] bg-yellow-300 rounded-3xl px-2 py-1 cursor-pointer">
+                    <div className="flex items-center w-[247px] h-[329x] bg-yellow-300 rounded-3xl  cursor-pointer">
                         <div className="flex items-center" onClick={toggleMenu}>
                             <img src="/images/mainmenu.png" alt="Logo" width={32} height={32} />
                             <span className="">All Categories</span>
@@ -196,12 +171,14 @@ const Menu = () => {
                 {/* Show submenus of hovered item */}
                 {
                     isMenuVisible && hoveredMenuItem && (
-                        <div className="bg-white flex flex-col gap-4 px-[100px] border-l" onMouseLeave={handleMouseLeave}>
+                        <div>
+                            <div className="bg-white flex flex-col gap-4 pl-[50px] pr-[170px] -mt-[44px] border-l h-screen" onMouseLeave={handleMouseLeave}>
                             {hoveredMenuItem.submenus.map((submenu, idx) => (
                                 <div key={idx} className="text-black">
                                     {submenu}
                                 </div>
                             ))}
+                        </div>
                         </div>
                     )
                 }
