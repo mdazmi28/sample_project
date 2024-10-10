@@ -8,6 +8,7 @@ import Divider from '../components/Divider';
 import EarlyBirdOffers from '../components/EarlyBirdOffers';
 import GetAnApple from '../components/GetAnApple';
 import HeroSection from '../components/HeroSection';
+import LiveShopping from '../components/LiveShopping';
 import MasterLayout from '../components/MasterLayout';
 import NewlyArrived from '../components/NewlyArrived';
 import PopularCategories from '../components/PopularCategories';
@@ -34,6 +35,7 @@ const LandingPage = () => {
                 <SmartPhoneAndAcc/>
                 <Auctions />
                 <Classifieds />
+                <LiveShopping/>
                 {/* <Timer /> */}
             </div>
         </MasterLayout>
