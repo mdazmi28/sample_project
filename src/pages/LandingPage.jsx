@@ -8,6 +8,7 @@ import Divider from '../components/Divider';
 import EarlyBirdOffers from '../components/EarlyBirdOffers';
 import GetAnApple from '../components/GetAnApple';
 import HeroSection from '../components/HeroSection';
+import MasterLayout from '../components/MasterLayout';
 import NewlyArrived from '../components/NewlyArrived';
 import PopularCategories from '../components/PopularCategories';
 import SaleCampAndDetaisDay from '../components/SaleCampAndDetaisDay';
@@ -16,24 +17,24 @@ import Timer from '../components/Timer';
 
 const LandingPage = () => {
     return (
-        <div className="container mx-auto flex flex-col gap-11">
-            <HeroSection/>
-            <SaleCampAndDetaisDay/>
-            <PopularCategories/>
-            <Divider/>
-            <NewlyArrived/>
-            <ComponentUnderNewlyArrives/>
-            <ComponentUnderNewlyArrives2/>
-            <EarlyBirdOffers/>
-            <GetAnApple/>
-            <ShopByCategory />
-            <BeforeSPAndAcce />
-            <Auctions/>
-            <Classifieds/>
-            <Timer/>
-           
-            
-        </div>
+        <MasterLayout>
+            <div className="container mx-auto flex flex-col gap-11">
+                <HeroSection />
+                <SaleCampAndDetaisDay />
+                <PopularCategories />
+                <Divider />
+                <NewlyArrived />
+                <ComponentUnderNewlyArrives />
+                <ComponentUnderNewlyArrives2 />
+                <EarlyBirdOffers />
+                <GetAnApple />
+                <ShopByCategory />
+                <BeforeSPAndAcce />
+                <Auctions />
+                <Classifieds />
+                <Timer />
+            </div>
+        </MasterLayout>
     );
 };
 

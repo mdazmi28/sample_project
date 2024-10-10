@@ -35,7 +35,7 @@ const GetAnApple = () => {
                 <div className="w-full grid grid-cols-5 gap-9">
                     {
                         data.map((item, index) => (
-                            <div className="gap-4 w-[248px] h-[112px] bg-gray-300" key={index}>
+                            <div className="gap-4 w-[248px] h-[112px] bg-gray-300 rounded-xl" key={index}>
                                 <div className="flex mt-4 ml-6 gap-4">
                                     <div className="w-[80px] h-[80px] bg-white rounded-lg"></div>
                                     <div className="flex flex-col gap-4">
