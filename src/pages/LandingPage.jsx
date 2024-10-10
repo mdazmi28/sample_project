@@ -18,7 +18,7 @@ import Timer from '../components/Timer';
 const LandingPage = () => {
     return (
         <MasterLayout>
-            <div className="flex flex-col gap-11">
+            <div className="flex flex-col gap-11 mr-[200px]">
                 <HeroSection />
                 <SaleCampAndDetaisDay />
                 <PopularCategories />

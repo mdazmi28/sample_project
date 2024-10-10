@@ -11,9 +11,9 @@ const MasterLayout = (props) => {
                 <Menu />
             </div>
             {/* Right */}
-            <div className="bg-[#F7F8FA] overflow-y-scroll flex flex-col hide-scrollbar -mx-[10px]">
-                <NavBar />
-                <div className="pr-[200px]">
+            <div className="bg-[#F7F8FA] overflow-y-scroll hide-scrollbar flex flex-col -ml-[10px]">
+                <NavBar className="w-full" />
+                <div className="">
                     {props.children}
                 </div>
 
