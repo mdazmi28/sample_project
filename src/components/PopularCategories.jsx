@@ -7,23 +7,36 @@ import "swiper/css";
 
 import "./Style/Swiper/popularCategories.css";
 const data = [
-    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
-    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
-    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
-    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
-    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
-    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
-    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
-    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
-    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
-    { id: 3, name: "Welcome Home Furnit… ", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    { id: 3, name: "Welcome", des: "Only 7 days left" },
+    
 ];
+
+// import React from 'react';
 
 const PopularCategories = () => {
     return (
-        <div className='w-full h-[216px] flex'>
-            <div className="w-1/3 flex flex-col">
-                <div className='flex flex-col justify-center items-start pl-10 pt-[40px] gap-4'>
+        <div className='container mx-[100px]'>
+            <div className='flex rounded container mx-auto h-auto'>
+            <div className="w-1/3">
+            <div className='flex flex-col justify-start items-start  gap-4'>
                     <h1 className="text-[20px] font-bold font-lato">Popular Categories</h1>
                     <p className="text-[17px] text-gray-400">What our customers find interesting</p>
                     <div className="w-[188px] h-[40px] bg-yellow-300 rounded-lg flex justify-center items-center cursor-pointer">
@@ -31,8 +44,8 @@ const PopularCategories = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-2/3">
-                <div className="flex justify-start hide-scrollbar overflow-x-auto gap-4">
+            <div className="w-2/3 ">
+            <div className="flex justify-start hide-scrollbar overflow-x-auto gap-4">
                 <Swiper className="mySwiper" spaceBetween={30} slidesPerView={6}> 
                 {
                     data.map((item, index) => (
@@ -49,7 +62,8 @@ const PopularCategories = () => {
                 </div>
 
             </div>
-
+            
+        </div>
         </div>
     );
 };

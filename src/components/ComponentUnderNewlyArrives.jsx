@@ -4,7 +4,8 @@ const data = [1, 2, 3];
 
 const ComponentUnderNewlyArrives = () => {
     return (
-        <div className='h-[216px] w-auto rounded-lg flex justify-center gap-4'>
+        <div className='container mx-[100px]'>
+            <div className="flex gap-4 rounded container mx-auto h-[px]">
             {
                 data.map((item, index) => (
                     <div key={index} className="h-[240px] w-[500px] bg-gray-300 flex items-center justify-center rounded-lg">
@@ -13,6 +14,8 @@ const ComponentUnderNewlyArrives = () => {
                 ))
             }
         </div>
+        </div>
+        
     );
 };
 

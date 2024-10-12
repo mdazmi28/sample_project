@@ -151,7 +151,7 @@ const Menu = () => {
                                     onMouseEnter={() => handleMouseEnter(menuItem)}  // Track hover event
                                     // onMouseLeave={handleMouseLeave}
                                     href={menuItem.href}
-                                    className="flex items-center justify-start border gap-4 text-black py-2 md:px-2 rounded-md hover:bg-lamaSkyLight transition-all"
+                                    className="flex items-center justify-start  gap-4 text-black py-2 md:px-2 rounded-md hover:bg-lamaSkyLight transition-all"
                                 >
                                     <img src={menuItem.icon} width={20} height={20} />
                                     <span
@@ -172,7 +172,7 @@ const Menu = () => {
                 {
                     isMenuVisible && hoveredMenuItem && (
                         <div>
-                            <div className="bg-white flex flex-col gap-4 pl-[50px] pr-[170px] -mt-[44px] border-l h-screen" onMouseLeave={handleMouseLeave}>
+                            <div className="bg-white flex flex-col gap-4 pl-[50px] pr-[170px] -mt-[44px] -l h-screen" onMouseLeave={handleMouseLeave}>
                             {hoveredMenuItem.submenus.map((submenu, idx) => (
                                 <div key={idx} className="text-black">
                                     {submenu}

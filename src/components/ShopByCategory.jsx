@@ -20,22 +20,27 @@ const data = [
 
 const ShopByCategory = () => {
     return (
-        <div className="flex flex-col justify-center items-center">
-            <h1 className="font-lato mb-10 text-[30px]">Shop By Category</h1>
-            <div className="grid grid-cols-8 gap-5">
-            {
-                data.map((item, index) => (
-                    <div key={index} className="flex flex-col items-center">
-                        <div className="h-[112px] w-[112px] bg-gray-300 rounded"></div>
-                        
-                        <h1 className="text-[13px] text-black-700 break-words text-center font-lato">{item.name}</h1>
-                        
-                        
-                    </div>
-                ))
-            }
+        <div className='container mx-[100px]'>
+            <div className="rounded container mx-auto h-[px]">
+                <div className="flex justify-center">
+                    <h1 className="font-lato mb-10 text-[30px]">Shop By Category</h1>
+                </div>
+                <div className="grid grid-cols-8 gap-5">
+                    {
+                        data.map((item, index) => (
+                            <div key={index} className="flex flex-col items-center">
+                                <div className="h-[112px] w-[112px] bg-gray-300 rounded"></div>
+
+                                <h1 className="text-[13px] text-black-700 break-words text-center font-lato">{item.name}</h1>
+
+
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
         </div>
-        </div>
+
     );
 };
 

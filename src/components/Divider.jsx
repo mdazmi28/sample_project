@@ -2,9 +2,11 @@
 
 const Divider = () => {
     return (
-        <div className='h-[216px] w-auto bg-blue-950 rounded-lg'>
-            
+        <div className='container mx-[100px]'>
+             <div className='flex bg-blue-950 h-[150px] rounded-xl'> 
+            </div>
         </div>
+       
     );
 };
 

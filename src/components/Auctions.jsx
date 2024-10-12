@@ -1,5 +1,4 @@
 // import React from 'react';
-const boxes = [1, 2]; // Array to map through
 const data = [
     { id: 1, name: "Women’s Corner", age: 25 },
     { id: 2, name: "Men’s Corner", age: 30 },
@@ -8,65 +7,75 @@ const data = [
 
 const Auctions = () => {
     return (
-        <div className="flex flex-col">
-            <h1 className="font-bold text-[30px]">Auctions</h1>
-            <h1 className="text-[17px]">Bid, Win, Smile: Your Ultimate Auction Experience</h1>
-            <div className="flex gap-4">
-                {/* Left */}
-                <div className="w-1/3">
-                    <div className="w-[456px] h-[504px] bg-gray-300 rounded-lg"></div>
-                </div>
-                {/* Middle */}
-                <div className="w-1/3">
-                    <div className="grid grid-cols-1 gap-4">
-                        {boxes.map((box, index) => (
-                            <div
-                                key={index}
-                                className="w-[456px] h-[240px] bg-gray-300 border border-gray-300 rounded-lg shadow-lg"
-                            ></div>
-                        ))}
+        <div className='container mx-[100px]'>
+            <div className="flex flex-col gap-4 rounded container mx-auto h-[px] ">
+            <div className="flex flex-col">
+                <h1 className="font-bold text-[30px] text-gray-400">Auctions</h1>
+                <h1 className="text-[17px] text-gray-400">Bid, Win, Smile: Your Ultimate Auction Experience</h1>
+                <div className="flex gap-4">
+                    {/* Left */}
+                    <div className="w-1/3 border border-red">
+                        <div className="h-[350px]  bg-gray-300"></div>
                     </div>
-                </div>
-                {/* Right */}
-                <div className="w-1/3 mt-[90px]">
-                    <div className="flex flex-col">
-                        <div className="h-[240px] w-[456px]">
-                            <div>
-                                <h1 className="font-semibold text=[17px] mb-2">Auctions About to End</h1>
+
+                    {/* Middle */}
+                    <div className="w-1/3 border border-red">
+                        <div className="h-[350px] ">
+                            <div className="flex flex-col gap-4">
+                                <div className="h-[165px]  bg-gray-300"></div>
+                                <div className="h-[165px]  bg-gray-300"></div>
                             </div>
-                            <div className="flex gap-12">
-                                {data.map((item, index) => (
+                        </div>
+
+                    </div>
+
+                    {/* Right */}
+                    <div className="w-1/3 border border-red">
+                        <div className="h-[350px] ">
+                            <div className="flex flex-col gap-4">
+                                <div className="h-[165px]  p-4">
+                                    <div className="flex flex-col gap-4">
+                                        <div><h1 className="text-[17px] font-bold">Auctions About to End</h1></div>
+                                        <div className="flex gap-5">
+                                        {data.map((item, index) => (
                                     <div key={index}>
-                                        <div className="h-[112px] w-[112px] bg-gray-300 rounded"></div>
+                                        <div className="h-[60px] w-[60px] bg-gray-300 rounded"></div>
 
                                         <h1 className="text-[13px] text-black-700 break-words text-center ">
                                             {item.name}
                                         </h1>
                                     </div>
                                 ))}
-                            </div>
-                        </div>
-                        <div className="h-[240px] w-[456px]">
-                            <div>
-                                <h1 className="font-semibold text=[17px] mb-2">New in Auction</h1>
-                            </div>
-                            <div className="flex gap-12">
-                                {data.map((item, index) => (
+                                            </div>
+                                    </div>
+                                </div>
+                                <div className="h-[165px]  p-4">
+                                    <div className="flex flex-col gap-4">
+                                        <div><h1 className="text-[17px] font-bold">New In Auctin</h1></div>
+                                        <div className="flex gap-5">
+                                        {data.map((item, index) => (
                                     <div key={index}>
-                                        <div className="h-[112px] w-[112px] bg-gray-300 rounded"></div>
+                                        <div className="h-[60px] w-[60px] bg-gray-300 rounded"></div>
 
                                         <h1 className="text-[13px] text-black-700 break-words text-center ">
                                             {item.name}
                                         </h1>
                                     </div>
                                 ))}
+                                            </div>
+                                    </div>
+                                </div>
                             </div>
-
                         </div>
+
                     </div>
+
                 </div>
             </div>
+
         </div>
+        </div>
+        
     );
 };
 

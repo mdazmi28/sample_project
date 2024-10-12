@@ -35,8 +35,8 @@ const LandingPage = () => {
                 <SmartPhoneAndAcc/>
                 <Auctions />
                 <Classifieds />
-                <LiveShopping/>
-                {/* <Timer /> */}
+                <LiveShopping/> 
+                
             </div>
         </MasterLayout>
     );

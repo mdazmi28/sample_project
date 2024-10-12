@@ -13,7 +13,8 @@ const data = [
 
 const GetAnApple = () => {
     return (
-        <div className="flex flex-col gap-10">
+        <div className='container mx-[100px]'>
+             <div className="rounded flex flex-col gap-4">
             {/* Top */}
             <div className='w-full flex gap-4'>
                 <div className="w-1/2 h-[250px] bg-gray-300"></div>
@@ -32,15 +33,15 @@ const GetAnApple = () => {
             </div>
             {/* Bottom */}
             <div>
-                <div className="w-full grid grid-cols-5 gap-9">
+                <div className="grid grid-cols-5 gap-3">
                     {
                         data.map((item, index) => (
-                            <div className="gap-4 w-[248px] h-[112px] bg-gray-300 rounded-xl" key={index}>
+                            <div className="gap-4  bg-gray-300 rounded-xl" key={index}>
                                 <div className="flex pt-4 pl-6 gap-4">
-                                    <div className="w-[80px] h-[80px] bg-white rounded-lg"></div>
+                                    <div className="w-[50px] h-[50px] bg-white rounded-lg"></div>
                                     <div className="flex flex-col gap-4">
-                                        <h1>{item.name}</h1>
-                                        <h2>{item.des}</h2>
+                                        <h1 className="text-[13px]">{item.name}</h1>
+                                        <h2 className="text-[13px] font-bold">{item.des}</h2>
                                     </div>
                                 </div>
                             </div>
@@ -50,6 +51,8 @@ const GetAnApple = () => {
                 </div>
             </div>
         </div>
+        </div>
+       
     );
 };
 
