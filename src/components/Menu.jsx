@@ -125,7 +125,9 @@ const Menu = () => {
     };
 
     return (
-        <div className="mt-4 text-sm w-[270px]">
+       <div className="">
+         <div className={`pt-4 text-sm w-[270px] ${isMenuVisible ? 'bg-white' : ''}`}>
+            
             {
                 isMenuVisible ? (
                     <div className="flex items-center w-[247px] h-[329x] bg-yellow-300 rounded-3xl  cursor-pointer">
@@ -151,11 +153,11 @@ const Menu = () => {
                                     onMouseEnter={() => handleMouseEnter(menuItem)}  // Track hover event
                                     // onMouseLeave={handleMouseLeave}
                                     href={menuItem.href}
-                                    className="flex items-center justify-start  gap-4 text-black py-2 md:px-2 rounded-md hover:bg-lamaSkyLight transition-all"
+                                    className="flex items-center justify-start gap-4 text-black py-2 md:px-2 rounded-md hover:bg-lamaSkyLight transition-all"
                                 >
                                     <img src={menuItem.icon} width={20} height={20} />
                                     <span
-                                        className={`transition-all duration-300 ease-in-out ${isMenuVisible
+                                        className={`transition-all  duration-300 ease-in-out ${isMenuVisible
                                             ? "inline-block w-auto opacity-100"
                                             : "w-0 opacity-0 overflow-hidden"
                                             }`}
@@ -184,6 +186,7 @@ const Menu = () => {
                 }
             </div>
         </div>
+       </div>
     );
 };
 
